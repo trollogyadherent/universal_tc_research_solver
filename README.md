@@ -13,3 +13,6 @@
 
 ### Coming maybe:
 * Adding / modifying / removing aspects with input parsing JSON
+
+### Live instance:
+https://trollogyadherent.github.io/universal_tc_research_solver/solver.html
