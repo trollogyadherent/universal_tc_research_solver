@@ -1,4 +1,5 @@
 # Universal Thaumcraft Research Solver
+## Codebase to be rewritten from scratch in 100 years or so
 ## Web solver for Thaumcraft 4 Research minigame
 
 ### Features:
