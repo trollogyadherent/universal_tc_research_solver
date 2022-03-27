@@ -1,0 +1,135 @@
+#aspect_selector_gui {
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/*height: 250px;*/
+	/*height: auto;*/
+	overflow-y: scroll;
+	border: solid; padding-top: 10px;
+	flex-direction: row;
+}
+
+.aspect_content_wrapper {
+	width: 10em;
+	/*height: 60px;*/
+	height: auto;
+	border: solid;
+	border-color: #3D3D3C;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1%;
+}
+
+.aspect_content_wrapper img {
+	width: 35%;
+	margin-right: 10%;
+	min-width: 35%;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	cursor: pointer;
+}
+
+.aspect_content_wrapper img:hover {
+	box-shadow: 0 0 3px #ddd;
+	border-radius: 50%;
+}
+
+.aspect_text_wrapper {
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+ 	white-space: nowrap;
+	line-height: 95%;
+	cursor: pointer;
+}
+
+.aspect_text_wrapper:hover {
+	text-shadow: 0 0 10px #ff4242;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	margin-bottom: 10px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.css-input {
+	padding: 5px;
+	font-size: 16px;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	background-color: #FFFFFF;
+	color: #000000;
+	border-style: solid;
+	border-radius: 0px;
+	box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+	text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+.css-input:focus {
+	outline:none;
+}
+
+#aspect_selector_modpack_wrapper {
+	display: flex;
+	flex-wrap: all;
+	flex-direction: column;
+	/*justify-content: center;*/
+	/*height: 500px;*/
+}
+
+#modpack_selector {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#modpack_selector label {
+	margin-right: 1em;
+}
+
+.input_wrapper {
+	display: inline-block;
+}
+
+#canvas {
+	flex-shrink: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  #canvas_selector_wrapper {
+     display: flex;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  #canvas {
+  	margin: 0 auto;
+  }
+  #aspect_selector_gui {
+  	width: 100%;
+  	height: 250px;
+  }
+}
